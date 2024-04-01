@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            width: 20vw;
+            border: 3px solid black;
+            padding: 10px;
+            gap: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            /* align-items: center; */
+        }
+    </style>
+</head>
+<body>
+    <h1>Welocome to log in page</h1>
+    <form action="/login" method="POST">
+        <input type="text" name="first name" placeholder="first name">
+        <input type="text" name="last name" placeholder="last name">
+        <input type="email" name="email" placeholder="email@gmail.com">
+        <input type="password" name="password" placeholder="password">
+        <button>log in</button>
+    </form>
+</body>
+</html>
