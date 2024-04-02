@@ -32,6 +32,23 @@ app.get('/users',async(req, res) => {
          })
     }
 })
+app.post('/users',async(req, res) => {
+    const{fisrtName,email,classNumber}=req.body;
+    try{
+        await Users.create({
+            name,
+            email,
+            classNumber:3
+        })
+        res.json({status:"Success"})
+    }
+    catch(err){
+        res.status(500).json({
+            status:"Failed",
+            message:"something went wrong"
+         })
+    }
+})
 app.get('/', (req, res) => {
     res.send("hii once again hello");
 })
